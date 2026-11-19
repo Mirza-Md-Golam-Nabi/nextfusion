@@ -1,0 +1,10 @@
+import type { SharedProps } from '@/types';
+
+declare module '@inertiajs/core' {
+    export interface InertiaConfig {
+        sharedPageProps: SharedProps;
+        flashDataType: {
+            success?: string;
+        };
+    }
+}

@@ -82,6 +82,33 @@ return [
 
     'fallback_locale' => env('APP_FALLBACK_LOCALE', 'en'),
 
+    /*
+    |--------------------------------------------------------------------------
+    | Supported Website Locales
+    |--------------------------------------------------------------------------
+    |
+    | The languages the public website can be viewed in, keyed by locale code.
+    | Translatable database content is stored per locale using these keys.
+    |
+    */
+
+    'supported_locales' => [
+        'en' => 'English',
+        'bn' => 'বাংলা',
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Default Website Locale
+    |--------------------------------------------------------------------------
+    |
+    | The language the public website is shown in until a visitor picks
+    | another one. The admin panel keeps using the application locale.
+    |
+    */
+
+    'website_locale' => env('APP_WEBSITE_LOCALE', 'bn'),
+
     'faker_locale' => env('APP_FAKER_LOCALE', 'en_US'),
 
     /*
