@@ -4,6 +4,8 @@ namespace App\Filament\Resources\Schools\Pages;
 
 use App\Filament\Resources\Schools\Actions\PullStudentReportAction;
 use App\Filament\Resources\Schools\Actions\PushSmsRateAction;
+use App\Filament\Resources\Schools\Actions\PushSmsResponseCodesAction;
+use App\Filament\Resources\Schools\Actions\PushSmsVendorsAction;
 use App\Filament\Resources\Schools\Actions\RegenerateSecretAction;
 use App\Filament\Resources\Schools\SchoolResource;
 use App\Filament\Resources\Schools\Widgets\MonthlyStudentsChart;
@@ -43,6 +45,8 @@ class EditSchool extends EditRecord
         return [
             PullStudentReportAction::make(),
             PushSmsRateAction::make(),
+            PushSmsVendorsAction::make(),
+            PushSmsResponseCodesAction::make(),
             RegenerateSecretAction::make(),
             DeleteAction::make(),
         ];

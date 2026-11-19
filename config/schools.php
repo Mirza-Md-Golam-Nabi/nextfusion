@@ -26,6 +26,18 @@ return [
      */
     'sms_rate_path' => '/api/central/sms-rate',
 
+    /*
+     * The endpoint every school installation exposes for the central app to
+     * replace its SMS provider response codes, relative to the school's base URL.
+     */
+    'sms_response_codes_path' => '/api/central/sms-response-codes',
+
+    /*
+     * The endpoint every school installation exposes for the central app to
+     * replace its SMS vendors (API key, Sender ID), relative to the school's base URL.
+     */
+    'sms_vendors_path' => '/api/central/sms-vendors',
+
     'pull_connect_timeout_seconds' => 10,
 
     'pull_timeout_seconds' => 20,
