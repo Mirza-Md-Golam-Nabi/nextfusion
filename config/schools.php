@@ -20,6 +20,12 @@ return [
      */
     'pull_path' => '/api/central/student-report',
 
+    /*
+     * The endpoint every school installation exposes for the central app to
+     * set its per-SMS charge, relative to the school's base URL.
+     */
+    'sms_rate_path' => '/api/central/sms-rate',
+
     'pull_connect_timeout_seconds' => 10,
 
     'pull_timeout_seconds' => 20,

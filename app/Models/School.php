@@ -21,6 +21,7 @@ class School extends Model
         'base_url',
         'secret',
         'is_active',
+        'sms_rate_per_sms',
     ];
 
     protected $hidden = [
@@ -36,6 +37,7 @@ class School extends Model
         return [
             'secret' => 'encrypted',
             'is_active' => 'boolean',
+            'sms_rate_per_sms' => 'decimal:4',
         ];
     }
 

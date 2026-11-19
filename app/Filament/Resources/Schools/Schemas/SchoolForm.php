@@ -43,6 +43,18 @@ class SchoolForm
                             ->inline(false),
                     ]),
 
+                Section::make('SMS')
+                    ->columnSpanFull()
+                    ->schema([
+                        TextInput::make('sms_rate_per_sms')
+                            ->label('Charge per SMS (৳)')
+                            ->helperText('স্কুল প্রতি SMS-এ তার ব্যালেন্স থেকে এই টাকা কাটবে। Save করলেই স্কুলের সার্ভারে চলে যায় — স্কুলের admin এটা বদলাতে পারে না।')
+                            ->numeric()
+                            ->minValue(0)
+                            ->maxValue(100)
+                            ->step(0.0001),
+                    ]),
+
                 Section::make('স্কুলের .env ফাইলে যা বসবে')
                     ->description('নিচের তিনটা মান এই স্কুলের সার্ভারের .env ফাইলে বসান। Secret কাউকে দেবেন না — এটা দিয়েই স্কুলের রিপোর্ট যাচাই হয়।')
                     ->columnSpanFull()
